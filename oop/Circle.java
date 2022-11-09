@@ -1,6 +1,6 @@
-package com.rays.oop;
+package in.com.rays.oop;
 
-public class Circle {
+public class Circle extends Shape {
 	
 
 	private double radius;

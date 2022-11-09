@@ -1,4 +1,4 @@
-package com.rays.oop;
+package in.com.rays.oop;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,6 +10,7 @@ public class Person {
 	private Date dob = null;
 	
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	
 	public String getName() {
 		return name;
@@ -27,7 +28,7 @@ public class Person {
 		String str = sdf.format(dob);
 		return str;
 	}
-	public void setDob(String dob) throws ParseException {
+	public void setDob(String dob) throws Exception {
 		this.dob = sdf.parse(dob);
 	}
 	

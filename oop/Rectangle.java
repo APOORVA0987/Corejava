@@ -1,4 +1,4 @@
-package com.rays.oop;
+package in.com.rays.oop;
 
 public class Rectangle extends Shape {
 	
@@ -14,12 +14,9 @@ public class Rectangle extends Shape {
 		length=a;
 		width=b;
 	}
+		
 		public double area() {
 			return length*width;
-			
-			
-			
-			
 		}
 		public int getLength() {
 			return length;

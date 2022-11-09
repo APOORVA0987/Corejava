@@ -1,4 +1,4 @@
-package com.rays.oop;
+package in.com.rays.oop;
 
 public class Triangle extends Shape {
 	
@@ -23,9 +23,17 @@ public class Triangle extends Shape {
 	public int getHight() {
 		return hight;
 	}
-public	double area() {
-	return( base*hight)/2;
-} 
+
+	@Override
+	public double area() {
+		
+		return base*hight/2;
+	}
+
+	
+
+	
+
 	
 		
 	}

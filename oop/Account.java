@@ -1,4 +1,8 @@
-package com.rays.oop;
+package in.com.rays.oop;
+
+import javax.security.auth.login.AccountException;
+
+import in.com.rays.exception.Account7;
 
 public class Account {
 	
@@ -8,11 +12,6 @@ public class Account {
 	
 	private  double balance ;
 	
-
-	
-
-	
-	
 public Account( String number ,String a,double b ) {
 	this. number= number;
 	 accounttype=a;
@@ -21,7 +20,7 @@ public Account( String number ,String a,double b ) {
 	}
 	    
 	public Account() {
-	// TODO Auto-generated constructor stub
+	
 }
 
 	public String getNumber() {
@@ -52,8 +51,16 @@ public Account( String number ,String a,double b ) {
  
  	   setBalance(getBalance()-pb);
         }
-        public void withdrawal(double W) {
-        setBalance(getBalance()-W);	
+        
+        public void withdrawal(double W) throws Account7 {
+      if((getBalance()-W)>500) {
+    	  
+      
+        	setBalance(getBalance()-W);	
+        	
+        }else {
+        	throw  new Account7();
+        }
         }
         public void deposit(double d) {
         	setBalance(getBalance() + d); 

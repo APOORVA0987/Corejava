@@ -1,38 +1,42 @@
 
-package com.rays.oop;
+package in.com.rays.oop;
 
-public class Shape {
+public abstract  class  Shape {
+	
+
 	private String color ;
 	private int borderwidth;
 	
 	
-
-	public Shape(String string, int i) {
-		// TODO Auto-generated constructor stub
-	}
-
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-
-	public void setBorderwidth(int borderwidth) {
-		this.borderwidth = borderwidth;
-	}
-
-
 	public String getColor() {
 		return color;
 	}
-
-
+	public void setColor(String color) {
+		this.color = color;
+	}
 	public int getBorderwidth() {
 		return borderwidth;
 	}
+	public void setBorderwidth(int borderwidth) {
+		this.borderwidth = borderwidth;
+	}
+	public abstract double area();	
+
+}		
+		
+	
+
 
 	
-	}
+
+	
+
+	
+
+
+	
+	
+	
 	
 
 
